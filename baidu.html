@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <title></title>
+            <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    </head>
+<body>
+            <input type="password" id="pwd" placeholder="请输入密码"/>
+            <i class="fa fa-eye" onclick="showhide()" id="eye"></i>
+
+            <script type="text/javascript">
+            var eye = document.getElementById("eye");
+            var pwd = document.getElementById("pwd");
+
+            function showhide(){
+
+                    if (pwd.type == "password") {
+                        pwd.type = "text";
+                            eye.className='fa fa-eye-slash'
+                    }else {
+                        pwd.type = "password";
+                        eye.className='fa fa-eye'
+                    }
+            }
+    </script>
+</body>
+</html>
